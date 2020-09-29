@@ -1,0 +1,6 @@
+---
+name: 'Helm Lint, Unittest and Build'
+description: 'Runs helm lint, helm unit test after installing dependancies from Charts'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
