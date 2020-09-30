@@ -1,9 +1,12 @@
 FROM ubuntu:18.04
 
+ENV HELM_DATA_HOME /helm-data-home
+
 RUN apt-get update -y && \
     apt-get install -y git curl python3 python3-pip && \
     pip3 install pyyaml && \
     curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash && \
+    mkdir -p $HELM_DATA_HOME && \
     helm plugin install https://github.com/quintush/helm-unittest --version 0.2.3
 
 COPY helm-repo-add.py /helm-repo-add.py
