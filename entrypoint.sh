@@ -13,4 +13,4 @@ helm lint
 
 helm unittest --helm3 .
 
-helm dependency pacakge
+helm package
