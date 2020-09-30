@@ -14,5 +14,3 @@ helm lint
 helm unittest --helm3 .
 
 helm dependency pacakge
-
-echo "::set-output name=time::$time"
