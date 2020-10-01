@@ -1,1 +1,1 @@
-FROM conversocial/helm-action:v1.2.3
+FROM conversocial/helm-action:v1.2.5
