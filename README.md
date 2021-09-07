@@ -13,5 +13,7 @@ repositories.yaml file and/or add helm repo add for each repo manually into GitH
 It then runs helm lint, helm unittest and packages the Chart ready for publishing by other tools
 such as sematic-release.
 
+Optionally pass HELM_LINT_ARG for extra args to helm lint.
+
 ## Example Usage:
 uses: conversocial/helm-action@v1

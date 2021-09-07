@@ -9,7 +9,7 @@ helm repo list
 
 helm dependency build
 
-helm lint
+helm lint $HELM_LINT_ARGS
 
 helm unittest --helm3 .
 
